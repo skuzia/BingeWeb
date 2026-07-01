@@ -1,4 +1,6 @@
 # StreamVault
+<img width="1918" height="931" alt="{1E2A5324-E24B-4A68-8EA2-76634899593F}" src="https://github.com/user-attachments/assets/9c40d25c-1cc6-48f4-b9f6-94579c3340ad" />
+
 
 **StreamVault** is a self-hosted, Stremio-style torrent streaming web app. Search for movies and TV shows, pick a torrent, and start watching directly in your browser — on your PC, phone, Smart TV, or Chromecast.
 
