@@ -1,9 +1,21 @@
 # StreamVault
 
-**StreamVault** is a self-hosted, Stremio-style torrent streaming web app. Search for movies and TV shows, pick a torrent, and start watching in your browser — on your PC, phone, or Smart TV on the same network.
+**StreamVault** is a self-hosted, Stremio-style torrent streaming web app. Search for movies and TV shows, pick a torrent, and start watching directly in your browser — on your PC, phone, Smart TV, or Chromecast.
 
-No cloud streaming service. Your machine runs a local Node.js backend that downloads via BitTorrent and serves video with on-the-fly transcoding when needed.
+No cloud streaming subscriptions. Your machine runs a local Node.js backend that handles BitTorrent networking, memory-efficient background buffering, and real-time FFmpeg transcoding to serve flawless video to any device on your network.
 
+---
+
+## 🔥 Killer Features
+
+- **Smart Pre-buffering (Binge Mode)** — True Netflix-style autoplay. Reaches 80% of an episode? The server silently finds and pre-buffers the next episode in the background. When the countdown ends, the next episode plays instantly with zero loading screen.
+- **Chromecast & AirPlay** — Cast directly from your custom web player to your living room TV. Automatically resolves your LAN IP so external receivers can connect without `localhost` issues.
+- **Auto Subtitles & Live Sync** — Searches and downloads subtitles automatically ([Wyzie Subs](https://sub.wyzie.io)). Converts SRT to native VTT on the fly, with full UI customization (size, color, background) and live synchronization (`[`/`]`).
+- **Server-First Streaming** — Node.js WebTorrent handles the heavy lifting (UDP/TCP). Connects to all peers and manages memory safely without choking your browser.
+- **Live FFmpeg Transcoding** — Adaptive playback. Direct HTTP streams for supported devices, or on-the-fly progressive MP4/HLS transcoding for incompatible MKV/HEVC containers.
+- **Smart TV Optimized** — Auto-detects LG webOS and Samsung Tizen browsers to serve tailored HLS streams with remote-friendly UI navigation.
+- **Discover & Multi-Source** — Browse catalogs via Cinemeta. Scrapes The Pirate Bay, 1337x, and more (optional FlareSolverr support for Cloudflare bypass).
+- **Privacy First (Memory-Only)** — Default storage keeps nothing on disk. Torrents are streamed directly from RAM.
 ---
 
 ## Features
