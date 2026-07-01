@@ -474,6 +474,10 @@ function waitForMetadata (torrent, res) {
   })
 
   torrent.once('error', (err) => {
+    if (err.message.includes('duplicate')) {
+      console.log('[server] Ignored duplicate error event on torrent:', err.message)
+      return
+    }
     clearTimeout(timer)
     console.error('[server] Error:', err.message)
     finish(() => res.status(500).json({ error: err.message }))
