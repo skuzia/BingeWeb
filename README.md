@@ -1,4 +1,4 @@
-# StreamVault
+# BingeWeb
 https://github.com/user-attachments/assets/10ae1502-e68a-4762-a5ac-8341c1b812b0
 
 https://github.com/user-attachments/assets/791e4ff5-afb1-47c5-888b-091a41495ecd
@@ -8,7 +8,7 @@ https://github.com/user-attachments/assets/3ffabd15-6c2c-4f10-ae4f-804c51ffe346
 https://github.com/user-attachments/assets/295e8522-8a34-44fa-8e23-f50a6a7d8a63
 
 
-**StreamVault** is a self-hosted, Stremio-style torrent streaming web app. Search for movies and TV shows, pick a torrent, and start watching directly in your browser — on your PC, phone, Smart TV, or Chromecast.
+**BingeWeb** is a self-hosted, Stremio-style torrent streaming web app. Search for movies and TV shows, pick a torrent, and start watching directly in your browser — on your PC, phone, Smart TV, or Chromecast.
 
 No cloud streaming subscriptions. Your machine runs a local Node.js backend that handles BitTorrent networking, memory-efficient background buffering, and real-time FFmpeg transcoding to serve flawless video to any device on your network.
 
@@ -70,7 +70,7 @@ When you click **Stream**, the app checks if the local server is running. If yes
 
 ## Playback by device
 
-StreamVault picks the best path automatically based on your browser and file format.
+BingeWeb picks the best path automatically based on your browser and file format.
 
 | Device | MP4 / WebM (native) | MKV / AVI / etc. (needs transcode) |
 |--------|---------------------|-------------------------------------|
@@ -120,7 +120,7 @@ npm start
 You should see:
 
 ```
-✅  StreamVault server running
+✅  BingeWeb server running
    Local :  http://localhost:9091
    LAN   :  http://<your-ip>:9091
 
@@ -267,7 +267,7 @@ If you enable the `uindex` or `ext` torrent sources, they are often protected by
      --restart unless-stopped \
      ghcr.io/flaresolverr/flaresolverr:latest
    ```
-2. **Launch StreamVault** configured with FlareSolverr:
+2. **Launch BingeWeb** configured with FlareSolverr:
    ```bash
    FLARESOLVERR_URL=http://localhost:8191 TORRENT_SOURCES=tpb,1337x,uindex,ext npm start
    ```
@@ -353,7 +353,7 @@ torrentweb/
 
 ## Legal disclaimer
 
-**StreamVault is for educational and personal use only.**
+**BingeWeb is for educational and personal use only.**
 
 - You are responsible for complying with copyright laws in your country.
 - Only stream content you have the legal right to access.
